@@ -34,10 +34,13 @@ router.post('/searchBooks',booksHelper.search)
 // @no returns
 router.delete('/delete',booksHelper.deleteBook)
 
+// @get book in particularAuthor
+// @body author name
+// @no returns
 router.get('/books',booksHelper.particularAuthorBooks)
 
 // @deleting all the books of a particular author
-// @body author _id 
+// @body author name
 // @no returns
 router.delete('/AuthorBooksDelete',booksHelper.AuthorBooksDelete)
 
